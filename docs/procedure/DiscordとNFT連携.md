@@ -20,7 +20,7 @@ add reactionsも入れておくとよいかもしれない。
 
 3. 専用ロール作成
 
-作成するプライベートチャンネルに利用するロールを親切。
+作成するプライベートチャンネルに利用するロールを新設。
 
 4. プライベートチャンネル創設
 
@@ -28,32 +28,37 @@ add reactionsも入れておくとよいかもしれない。
 
 5. Botの設定
 
-!setup roleを、Collab.land-configチャンネルで打つ。(Discordじゃなくても設定はできそう)
-ここから、プライベートチャンネルに対するNFTトークンによる設定を行う
+https://cc.collab.land/
+こちらのTGRから、認証に使用するNFTを選択する
 
-絵文字を押下して設定を行い、ロールなども選択する。
-roleなどの設定をするコマンドは以下のようにう打つ。
-
-```
-<Contract Address> <最低NFT保持数> <最高NFT保持数> @<認証に利用するロール>
-```
+※OpenSeaの場合、Mainetを選択すると良い。
 
 6. チャンネル内でBotをセットアップ
 
-上記まで設定ができたら、パブリックチャンネルから!joinコマンドを打つ。
+collabland-joinチャンネルに移動して、「Let's go」ボタンを押下。
+
 すると、うまくいけば認証に関するDMが飛んでくる。
 
 ※指定したNFTがWalletにないと認証はできないはず。
 
 Token Permissioned Roles - Collab.Land https://collab-land.gitbook.io/collab-land/bots/discord/token-permissioned-roles
+Discord Bot Walkthrough : Collab.land Support https://collabland.freshdesk.com/support/solutions/articles/70000036689-discord-bot-walkthrough
+
+## Discordサーバでの認証方法(テスト)
+
+1. 
+collabland-joinチャンネルに移動する。
+「Let's Go」があるので、押下。
+
+2. 
+案内にしたがって操作。Verifyボタンを押下。
+
+3. Discordチャンネルに戻ると、「No roles granted...」と表示される。
+
+4. 「NFTホルダー向け」というチャンネルが見えなければ、成功。
 
 ## 参考サイト
 
-【保存版】特定のNFT保持者限定のDiscordの作り方について（チャンネル作成編）｜ユウキ｜note https://note.com/standenglish/n/n60e1d989ffee
-ところどころ間違えている。
-
-!helpで設定ができるとあるが、古い情報のようだ。
-
-【保存版】特定のNFT保持者限定のDiscordの作り方について（ウォレット接続編）｜ユウキ｜note https://note.com/standenglish/n/n7149f4dcb1af
+【NFTコミュニティ】DiscordでNFT保有者限定コミュニティを作る方法 | コヤブログ https://koyablogs.com/how-to-make-nft-holder-channel-in-discord/#3
 
 metamask - where to find the address of the NFT contract I created on opensea - Ethereum Stack Exchange https://ethereum.stackexchange.com/questions/113932/where-to-find-the-address-of-the-nft-contract-i-created-on-opensea
