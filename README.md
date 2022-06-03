@@ -5,3 +5,11 @@
 ## 初期開発
 
 まずは、ロゴのNFT化を目指します。
+
+## コントラクトのデプロイ
+
+```sh
+cd michinoku-contract
+truffle compile
+truffle migrate
+```
