@@ -11,5 +11,7 @@
 ```sh
 cd michinoku-contract
 truffle compile
-truffle migrate
+truffle console
+instance = await MichinokuMarket.new('testName', 'testSymbol')
+instance.batchMint(<metadata uri>, <発行する個数>)
 ```
