@@ -15,6 +15,11 @@ instance = await MichinokuMarket.new('testName', 'testSymbol')
 instance.batchMint(<metadata uri>, <発行する個数>)
 ```
 
+## PJ管理
+
+Issueでタスクを管理しています。
+また、プロジェクトについては、「Project」というタグをつけたIssueで管理をしています。
+
 ## ドキュメント
 
 [基本設計](./docs/basic_design.md)
@@ -28,3 +33,4 @@ instance.batchMint(<metadata uri>, <発行する個数>)
 [認証用のDiscordBot設定方法](./docs/procedure/DiscordとNFT連携.md)
 
 [ブランチの切り方](./docs/branch_management.md)
+
