@@ -20,9 +20,11 @@ instance.batchMint(<metadata uri>, <発行する個数>)
 Issueでタスクを管理しています。
 また、プロジェクトについては、「Project」というタグをつけたIssueで管理をしています。
 
+進捗については当リポジトリの「Project」タブから確認してみてください。
+
 ## ドキュメント
 
-[基本設計](./docs/basic_design.md)
+[基本設計](./docs/discord_notification_design.md)
 
 [開発ロードマップ](./docs/development_process.md)
 
