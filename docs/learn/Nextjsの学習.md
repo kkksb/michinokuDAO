@@ -20,3 +20,20 @@ Material UIというのがあるので、こちらを利用する
 
 なんとデフォルトで実装されているそうだ。
 Next.jsのルーティング - Qiita https://qiita.com/tetsutaroendo/items/e444bd606c5fa79d2209
+
+## layout設計
+
+Next.jsのLayouts https://zenn.dev/hisho/articles/fe9f4ec4a8e691
+
+## logging
+
+【React】ログ収集のためのReactライブラリを作る方法【閲覧イベント編】 - Qiita https://qiita.com/YutamaKotaro/items/ad2db17decf282b92ee1
+
+## そのほか
+
+すべてのReact.js初心者が知っておくべき9つのポイント - Qiita https://qiita.com/ossan-engineer/items/3622e57ceb70c7f12295
+
+## トラブル
+
+Warning: Invalid hook call. 
+→[Invalid Hook Call Warning がなぜか直らない場合に考えられる原因](https://zenn.dev/sense_iy/articles/39bc29dc374e1b)
