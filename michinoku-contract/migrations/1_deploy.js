@@ -1,5 +1,5 @@
-const MichinokuNFT = artifacts.require("MichinokuNFT")
+const MichinokuMarket = artifacts.require("MichinokuMarket")
 
 module.exports = function (deployer) {
-  deployer.deploy(MichinokuNFT)
+  deployer.deploy(MichinokuMarket)
 }
