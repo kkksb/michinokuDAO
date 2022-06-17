@@ -1,31 +1,25 @@
-const MichinokuNFT = artifacts.require("MichinokuNFT")
+const MichinokuMarket = artifacts.require("MichinokuMarket")
 
-let michinokuNFT
-const baseURI = "https://sample.com/"
+let michinokuMarket
+const baseURI = "https://sample.com/1"
 
-contract("Random Speech", (accounts) => {
+contract("MichinokuMarket", (accounts) => {
 
   it("check deploy", async () => {
-    michinokuNFT = await MichinokuNFT.deployed()
-    assert(michinokuNFT.address, "deploy of MichinokuNFT is failed")
+    michinokuMarket = await MichinokuMarket.deployed()
+    assert(michinokuMarket.address, "deploy of MichinokuMarket is failed")
   })
 
   it("mint NFT", async () => {
-    // mint 10 NFT
-    for (let i = 1; i <= 10; i++) {
-      await michinokuNFT.michinokuMint(baseURI + i)
-    }
+    // mint NFT
+    await michinokuMarket.michinokuMint(baseURI)
     // check minted NFT owner
-    for (let i = 1; i <= 10; i++) {
-      await michinokuNFT.ownerOf(i).then(owner => {
-        assert.equal(owner, accounts[0], "owner is not accounts[0]")
-      })
-    }
+    await michinokuMarket.ownerOf(1).then(owner => {
+      assert.equal(owner, accounts[0], "owner is not accounts[0]")
+    })
     // check minted NFT tokenURI
-    for (let i = 1; i <= 10; i++) {
-      await michinokuNFT.tokenURI(i).then(tokenURI => {
-        assert.equal(tokenURI, baseURI + i, `uri is not ${baseURI + i}`)
-      })
-    }
+    await michinokuMarket.tokenURI(1).then(tokenURI => {
+      assert.equal(tokenURI, baseURI, `uri is not ${baseURI}`)
+    })
   })
 })
